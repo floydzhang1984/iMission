@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 
 /*
@@ -24,7 +27,7 @@ public class GuidingPage extends Activity implements OnPageChangeListener {
 	private List<View> views;
 	private ImageView[] dots;
 	private int[] ids = { R.id.guidepoint1, R.id.guidepoint2, R.id.guidepoint3 };
-	
+	private Button start_btn;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,17 @@ public class GuidingPage extends Activity implements OnPageChangeListener {
 		vp = (ViewPager) findViewById(R.id.viewpager);
 		vp.setAdapter(vpAdapter);
 		vp.setOnPageChangeListener(this);
+		//直接findViewById是找不到的
+		start_btn = (Button) views.get(2).findViewById(R.id.start_btn);
+		start_btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(GuidingPage.this, MainActivity.class);
+				startActivity(i);
+				finish();
+			}
+		});
 	}
 	
 	private void initDots() {

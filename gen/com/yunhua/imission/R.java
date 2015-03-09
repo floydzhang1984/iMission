@@ -28,6 +28,9 @@ public final class R {
         public static final int ic_launcher=0x7f020003;
         public static final int login_point=0x7f020004;
         public static final int login_point_selected=0x7f020005;
+        public static final int project_icon=0x7f020006;
+        public static final int target=0x7f020007;
+        public static final int welcome_page=0x7f020008;
     }
     public static final class id {
         public static final int action_settings=0x7f080006;
@@ -44,6 +47,7 @@ public final class R {
         public static final int guidingpageone=0x7f030002;
         public static final int guidingpagethree=0x7f030003;
         public static final int guidingpagetwo=0x7f030004;
+        public static final int welcome=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -52,6 +56,7 @@ public final class R {
         public static final int action_settings=0x7f050002;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
+        public static final int start_btn_name=0x7f050003;
     }
     public static final class style {
         /** 

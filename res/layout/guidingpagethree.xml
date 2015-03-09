@@ -8,7 +8,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@drawable/guidepage_3"
-        />
+        android:contentDescription="GuidingPage3"/>
     <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:id="@+id/start_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="开启坚持之旅" />
+            android:text="@string/start_btn_name" />
 	</LinearLayout>
 
 </RelativeLayout>

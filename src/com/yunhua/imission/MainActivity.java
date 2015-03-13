@@ -1,11 +1,23 @@
 package com.yunhua.imission;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
+import java.util.List;
 
-public class MainActivity extends Activity {
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.Window;
+
+import com.viewpagerindicator.TabPageIndicator;
+
+public class MainActivity extends FragmentActivity {
 	private static final String TAG = "MainActivity"; // for debug
+	
+	private ViewPager mViewPager;
+	private TabPageIndicator mTabPageIndicator;
+	private List<Fragment> mFragments;
+	private TabAdapter mTabAdapter;
 	
 	@Override
 	protected void onStart() {
@@ -52,8 +64,21 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 		Log.i(TAG, "MainActivity Created!");
+		
+		initView();
+
+	}
+	
+	private void initView() {
+		mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
+		mTabPageIndicator = (TabPageIndicator) findViewById(R.id.id_indicator);
+		mTabAdapter = new TabAdapter(getSupportFragmentManager());
+		mViewPager.setAdapter(mTabAdapter);
+		
+		mTabPageIndicator.setViewPager(mViewPager, 0);
 	}
 	
 }

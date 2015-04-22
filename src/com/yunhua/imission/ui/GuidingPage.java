@@ -1,7 +1,9 @@
-package com.yunhua.imission;
+package com.yunhua.imission.ui;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.yunhua.imission.R;
 
 import android.app.Activity;
 import android.content.Intent;

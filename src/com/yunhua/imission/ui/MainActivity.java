@@ -1,7 +1,8 @@
-package com.yunhua.imission;
+package com.yunhua.imission.ui;
 
 import java.util.List;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.Window;
 
 import com.viewpagerindicator.TabPageIndicator;
+import com.yunhua.imission.R;
 
 public class MainActivity extends FragmentActivity {
 	private static final String TAG = "MainActivity"; // for debug
@@ -69,7 +71,8 @@ public class MainActivity extends FragmentActivity {
 		Log.i(TAG, "MainActivity Created!");
 		
 		initView();
-
+		Intent i = new Intent(MainActivity.this, LoginActivity.class);
+		startActivity(i);
 	}
 	
 	private void initView() {

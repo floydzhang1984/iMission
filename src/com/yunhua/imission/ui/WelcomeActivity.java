@@ -1,4 +1,6 @@
-package com.yunhua.imission;
+package com.yunhua.imission.ui;
+
+import com.yunhua.imission.R;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -368,8 +368,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int welcome_page=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b000e;
+        public static final int action_settings=0x7f0b0012;
         public static final int bottom=0x7f0b0003;
+        public static final int btn_login=0x7f0b0010;
+        public static final int btn_reset=0x7f0b0011;
         public static final int guidepoint1=0x7f0b000a;
         public static final int guidepoint2=0x7f0b000b;
         public static final int guidepoint3=0x7f0b000c;
@@ -381,6 +383,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int start_btn=0x7f0b000d;
         public static final int top=0x7f0b0004;
         public static final int triangle=0x7f0b0001;
+        public static final int txt_login_name=0x7f0b000e;
+        public static final int txt_login_password=0x7f0b000f;
         public static final int underline=0x7f0b0002;
         public static final int viewpager=0x7f0b0008;
     }
@@ -398,19 +402,26 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int guidingpageone=0x7f030003;
         public static final int guidingpagethree=0x7f030004;
         public static final int guidingpagetwo=0x7f030005;
-        public static final int top=0x7f030006;
-        public static final int welcome=0x7f030007;
+        public static final int login_activity=0x7f030006;
+        public static final int top=0x7f030007;
+        public static final int welcome=0x7f030008;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int login=0x7f0a0000;
+        public static final int main=0x7f0a0001;
     }
     public static final class string {
         public static final int action_settings=0x7f090002;
         public static final int app_name=0x7f090000;
+        public static final int btn_login=0x7f090009;
+        public static final int btn_reset=0x7f09000a;
         public static final int github_address=0x7f090004;
         public static final int hello_world=0x7f090001;
         public static final int start_btn_name=0x7f090003;
+        public static final int title_activity_login=0x7f090006;
         public static final int top_words=0x7f090005;
+        public static final int txt_login_name=0x7f090007;
+        public static final int txt_login_password=0x7f090008;
     }
     public static final class style {
         /** 
